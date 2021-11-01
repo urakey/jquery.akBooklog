@@ -42,7 +42,7 @@
 
       $.ajax({
         type : 'GET',
-        url  : 'http://api.booklog.jp/json/' + options.booklog_id,
+        url  : 'https://api.booklog.jp/json/' + options.booklog_id,
         dataType: 'jsonp',
         data : {
           category : options.booklog_category,
@@ -79,7 +79,7 @@
         asin   = book.asin;
 
         if (options.amazon_id && asin) {
-          link = 'http://amazon.jp/exec/obidos/ASIN/' + asin + '/' + options.amazon_id + '/';
+          link = 'https://amazon.jp/exec/obidos/ASIN/' + asin + '/' + options.amazon_id + '/';
         }
 
         // MEMO: DOM は自由に作れたほうがいい！あとで検討する
